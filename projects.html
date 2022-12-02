@@ -1,4 +1,5 @@
-<!DOCTYPE html> <html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -8,17 +9,17 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
-    <title>Главная</title>
+    <title>Проекты и отрасли</title>
 </head>
 
 
 <body>
     <div class="wrapper">
-        <header class="header header--blue">
+        <header class="header">
             <div class="container">
     <div class="header__inner">
         <a href="index.html" class="header__logo logo">
-            <img src="img/logo.webp" alt="">
+            <img src="img/logo2.webp" alt="">
         </a>
         <div class="header__mob">
             <nav class="nav">
@@ -78,250 +79,15 @@
         </header>
         <main class="content">
 
-            <section class="main">
+            <section class="projects-page">
                 <div class="container">
-                    <div class="main__inner">
-                        <div class="main__left">
-                            <h1 class="main__title display1">
-                                Экспертное внедрение ЛИМС*
-                                <span>
-                                    Enterprise уровня без покупки лицензий
-                                </span>
-                            </h1>
-                            <p class="main__desc body-text">*ЛИМС - Лабораторная информационная менеджмент-система</p>
-                            <ul class="advantages">
-                                <li class="advantage-card">
-    <i class="advantage-card__icon">
-        <img src="img/advantage-icon.svg" alt="">
-    </i>
-    <h4 class="advantage-card__title body-text">Опыт с крупнейшими компаниями в СНГ</h4>
-</li>
-
-                                <li class="advantage-card">
-    <i class="advantage-card__icon">
-        <img src="img/advantage-icon2.svg" alt="">
-    </i>
-    <h4 class="advantage-card__title body-text">Анализ бизнес-требований</h4>
-</li>
-
-                                <li class="advantage-card">
-    <i class="advantage-card__icon">
-        <img src="img/advantage-icon3.svg" alt="">
-    </i>
-    <h4 class="advantage-card__title body-text">Проектирование решений ЛИМС* и MES</h4>
-</li>
-
-                                <li class="advantage-card">
-    <i class="advantage-card__icon">
-        <img src="img/advantage-icon4.svg" alt="">
-    </i>
-    <h4 class="advantage-card__title body-text">Международные стандарты внедрения</h4>
-</li>
-
-                            </ul>
-                        </div>
-                        <div class="main__right">
-                            <form class="main-form">
-    <h3 class="main-form__title">
-        Отправьте нам запрос <br>
-        на коммерческое предложение
-    </h3>
-    <p class="main-form__desc">
-        и наш специалист по внедрению ЛИМС свяжется с вами
-    </p>
-    <fieldset class="fg">
-        <img src="img/user.svg" alt="" class="fg__icon">
-        <input type="text" placeholder="имя">
-    </fieldset>
-    <fieldset class="fg">
-        <img src="img/tel.svg" alt="" class="fg__icon">
-        <input type="tel" placeholder="телефон">
-    </fieldset>
-
-    <fieldset class="main-form__check m-check">
-        <input checked type="checkbox">
-        <label>Согласие на обработку персональных данных</label>
-    </fieldset>
-
-    <button class="main-form__btn mbtn mbtn-white">
-        <span>Получить коммерческое предложение</span>
-            <svg class="sprite">
-                <use xlink:href="img/sprite.svg#chevron-right"></use>
-            </svg>
-    </button>
-</form>
-
-                        </div>
+                    <div class="breadcrumbs">
+                        <a href="index.html" class="breadcrumbs__item">Главная</a>
+                        <span class="breadcrumbs__item">Проекты и отрасли</span>
                     </div>
-                </div>
-            </section>
 
-            <section class="trust slider-block">
-                <div class="container">
-    <h2 class="trust__title display2">Нам доверяют</h2>
-    <div class="trust__slider slider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="img/trust.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/trust2.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/trust3.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/trust4.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/trust5.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/trust6.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/trust.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/trust2.webp" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="swiper-scrollbar"></div>
-    </div>
-</div>
-
-            </section>
-
-            <section class="geography">
-                <div class="container">
-    <h2 class="geography__title display2">География проектов</h2>
-</div>
-<div id="geo" class="geography__map"></div>
-<script type="text/javascript">
-    ymaps.ready(init);
-    const coord = [58.010455, 56.229443]
-
-    const cities = [
-        {
-            name: 'Пермь',
-            desc: 'Проект ЛИМС ООО «РН-Смазочные Материалы» на базе ПО LabWare LIMS',
-            link: 'some-link',
-            cords: [58.010455, 56.229443]
-        },
-        {
-            name: 'Москва',
-            desc: 'Проект ЛИМС ООО «РН-Смазочные Материалы» на базе ПО LabWare LIMS',
-            link: 'some-link',
-            cords: [55.755864, 37.617698]
-        },
-        {
-            name: 'Сургут',
-            desc: 'Проект ЛИМС ООО «РН-Смазочные Материалы» на базе ПО LabWare LIMS',
-            link: 'some-link',
-            cords: [61.241778, 73.393032]
-        },
-        {
-            name: 'Самара',
-            desc: 'Проект ЛИМС ООО «РН-Смазочные Материалы» на базе ПО LabWare LIMS',
-            link: 'some-link',
-            cords: [53.195878, 50.100202]
-        },
-        {
-            name: 'Омск',
-            desc: 'Проект ЛИМС ООО «РН-Смазочные Материалы» на базе ПО LabWare LIMS',
-            link: 'some-link',
-            cords: [54.989347, 73.368221]
-        },
-        {
-            name: 'Новосибирск',
-            desc: 'Проект ЛИМС ООО «РН-Смазочные Материалы» на базе ПО LabWare LIMS',
-            link: 'some-link',
-            cords: [55.030204, 82.920430]
-        },
-    ]
-
-    function init() {
-        let myMap = new ymaps.Map("geo", {
-            center: coord,
-            zoom: 5
-        });
-
-        myMap.behaviors.disable('scrollZoom');
-        let myIcon = ymaps.templateLayoutFactory.createClass(`
-            <div class="placemark">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="15" cy="15" r="15" fill="#2E56BD"/>
-                    <path d="M9.35541 15.6722C8.89994 15.5584 8.83834 14.9363 9.26263 14.7353L19.4014 9.93269C19.826 9.73157 20.2685 10.174 20.0673 10.5986L15.2648 20.7374C15.0638 21.1617 14.4417 21.1001 14.3278 20.6446L13.4061 16.9578C13.3613 16.7786 13.2214 16.6387 13.0423 16.5939L9.35541 15.6722Z" fill="white"/>
-                </svg>
-
-                <span>{{ properties.iconCaption }}</span>
-            </div>
-        `);
-
-
-        cities.forEach(city => {
-
-            var placemark = new ymaps.Placemark(city.cords, {
-                    balloonContentHeader: ``,
-                    balloonContentBody: `
-                <div class="place-card">
-                    <div class="place-card__top">
-                        <i class="place-card__icon">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3.35541 7.67223C2.89994 7.55836 2.83834 6.93627 3.26263 6.73529L13.4014 1.93269C13.826 1.73157 14.2685 2.17402 14.0673 2.59861L9.26476 12.7374C9.06377 13.1617 8.44168 13.1001 8.32782 12.6446L7.40609 8.95775C7.36131 8.77861 7.22143 8.63873 7.04229 8.59395L3.35541 7.67223Z" fill="#2E56BD"/>
-                            </svg>
-                        </i>
-                        <span>${city.name}</span>
-                    </div>
-                    <div class="place-card__content">
-                        <div class="place-card__title display3 medium-weight">
-                            ${city.desc}
-                        </div>
-                        <div class="place-card__bottom">
-                            <div class="place-card__images">
-                                <img src="img/co.svg" alt="">
-                                <img src="img/co2.svg" alt="">
-                            </div>
-                            <a href="${city.link}" class="place-card__link">
-                                <span>Подробнее</span>
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9 18.5L13.5 14L9 9.5" stroke="#2F3345" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                `,
-                    balloonContentFooter: '',
-                    iconCaption: city.name,
-                },
-                {
-                    iconLayout: myIcon,
-                    iconShape: {
-                        type: 'Rectangle',
-                        // Прямоугольник описывается в виде двух
-                        // точек - верхней левой и нижней правой.
-                        coordinates: [
-                            [-180, -60], [180, 60]
-                        ]
-                    }
-                }
-            );
-            myMap.geoObjects.add(placemark);
-        })
-
-    }
-</script>
-
-            </section>
-
-            <section class="projects slider-block">
-                <div class="container">
-    <div class="projects__top">
-        <h2 class="projects__title display2">Проекты и Отрасли</h2>
-        <div class="projects__links">
+                    <h1 class="projects-page__title display2">Проекты и отрасли</h1>
+                    <div class="projects__links">
     <a href="" class="projects__link">
         <img src="img/menu-icon.svg" alt="">
         <span>Все проекты</span>
@@ -340,12 +106,9 @@
     </a>
 </div>
 
-    </div>
 
-    <div class="projects__slider slider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="project-card swiper-slide">
+                    <div class="projects-page__grid">
+                        <div class="project-card swiper-slide">
     <div class="project-card__img">
         <img src="img/project.jpg" alt="">
     </div>
@@ -366,7 +129,7 @@
     </div>
 </div>
 
-                <div class="project-card swiper-slide">
+                        <div class="project-card swiper-slide">
     <div class="project-card__img">
         <img src="img/project2.jpg" alt="">
     </div>
@@ -387,7 +150,7 @@
     </div>
 </div>
 
-                <div class="project-card swiper-slide">
+                        <div class="project-card swiper-slide">
     <div class="project-card__img">
         <img src="img/project3.jpg" alt="">
     </div>
@@ -408,7 +171,7 @@
     </div>
 </div>
 
-                <div class="project-card swiper-slide">
+                        <div class="project-card swiper-slide">
     <div class="project-card__img">
         <img src="img/project.jpg" alt="">
     </div>
@@ -429,7 +192,7 @@
     </div>
 </div>
 
-                <div class="project-card swiper-slide">
+                        <div class="project-card swiper-slide">
     <div class="project-card__img">
         <img src="img/project2.jpg" alt="">
     </div>
@@ -450,12 +213,116 @@
     </div>
 </div>
 
-            </div>
+                        <div class="project-card swiper-slide">
+    <div class="project-card__img">
+        <img src="img/project3.jpg" alt="">
+    </div>
+    <div class="project-card__content">
+        <div class="project-card__images">
+            <img src="img/co4.svg" alt="">
+            <img src="img/co5.svg" alt="">
         </div>
-        <div class="swiper-scrollbar"></div>
+        <h3 class="project-card__title">
+            Проект ЛИМС ООО «РН-Смазочные Материалы» на базе ПО LabWare LIMS
+        </h3>
+        <a href="" class="project-card__link">
+            <span>Подробнее</span>
+            <svg class="sprite">
+                <use xlink:href="img/sprite.svg#chevron-right"></use>
+            </svg>
+        </a>
     </div>
 </div>
 
+                        <div class="project-card swiper-slide">
+    <div class="project-card__img">
+        <img src="img/project.jpg" alt="">
+    </div>
+    <div class="project-card__content">
+        <div class="project-card__images">
+            <img src="img/co.svg" alt="">
+            <img src="img/co2.svg" alt="">
+        </div>
+        <h3 class="project-card__title">
+            Проект ЛИМС ООО «РН-Смазочные Материалы» на базе ПО LabWare LIMS
+        </h3>
+        <a href="" class="project-card__link">
+            <span>Подробнее</span>
+            <svg class="sprite">
+                <use xlink:href="img/sprite.svg#chevron-right"></use>
+            </svg>
+        </a>
+    </div>
+</div>
+
+                        <div class="project-card swiper-slide">
+    <div class="project-card__img">
+        <img src="img/project2.jpg" alt="">
+    </div>
+    <div class="project-card__content">
+        <div class="project-card__images">
+            <img src="img/co.svg" alt="">
+            <img src="img/co3.svg" alt="">
+        </div>
+        <h3 class="project-card__title">
+            Thermo SampleManager LIMS по проекту внедрения ЛИМС для Гипроникель
+        </h3>
+        <a href="" class="project-card__link">
+            <span>Подробнее</span>
+            <svg class="sprite">
+                <use xlink:href="img/sprite.svg#chevron-right"></use>
+            </svg>
+        </a>
+    </div>
+</div>
+
+                        <div class="project-card swiper-slide">
+    <div class="project-card__img">
+        <img src="img/project3.jpg" alt="">
+    </div>
+    <div class="project-card__content">
+        <div class="project-card__images">
+            <img src="img/co4.svg" alt="">
+            <img src="img/co5.svg" alt="">
+        </div>
+        <h3 class="project-card__title">
+            Проект ЛИМС ООО «РН-Смазочные Материалы» на базе ПО LabWare LIMS
+        </h3>
+        <a href="" class="project-card__link">
+            <span>Подробнее</span>
+            <svg class="sprite">
+                <use xlink:href="img/sprite.svg#chevron-right"></use>
+            </svg>
+        </a>
+    </div>
+</div>
+
+                    </div>
+
+                    <div class="nav-block">
+                        <a href="" class="more-btn mbtn mbtn-blue-outline">
+    <span>Показать еще</span>
+    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 9.5L12 15.5L18 9.5" stroke="#2E56BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</a>
+
+<div class="pagination">
+    <a href="" class="pagination__item pagination__item--active">1</a>
+    <a href="" class="pagination__item">2</a>
+    <span class="pagination__dots">..</span>
+    <a href="" class="pagination__item">25</a>
+    <a href="" class="pagination__next">
+        <span>Далее</span>
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.61914 4.45331L13.6658 8.49998L9.61914 12.5466" stroke="#222222" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.33398 8.5H13.554" stroke="#222222" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+</div>
+
+                    </div>
+                </div>
             </section>
 
             <section class="consult">
@@ -498,273 +365,6 @@
     </div>
 
 </form>
-
-            </section>
-
-            <section class="service">
-                <div class="container">
-    <h2 class="service__title display2">Выберите услугу</h2>
-
-    <div class="service__items">
-        <li class="service-card" style="background: linear-gradient(90deg, #5658FE 0%, #467BFF 100%); box-shadow: 0px 10px 30px rgba(63, 115, 246, 0.3);">
-    <span style="background: #497DFF;" class="service-card__round service-card__round1"></span>
-    <span style="background: #366FFF;" class="service-card__round service-card__round2"></span>
-    <span class="service-card__num">01</span>
-    <div class="service-card__content">
-        <i class="service-card__icon">
-            <img src="img/service-icon.svg" alt="">
-        </i>
-        <h4 class="service-card__title body-text">Консалтинг</h4>
-    </div>
-</li>
-
-        <li class="service-card" style="background: linear-gradient(226.9deg, #AD45FF 4.46%, #8F20E7 97.51%); box-shadow: 0px 10px 30px rgba(179, 83, 255, 0.22);">
-    <span style="background: #B455FF;" class="service-card__round service-card__round1"></span>
-    <span style="background: #AD44FF;" class="service-card__round service-card__round2"></span>
-    <span class="service-card__num">02</span>
-    <div class="service-card__content">
-        <i class="service-card__icon">
-            <img src="img/service-icon2.svg" alt="">
-        </i>
-        <h4 class="service-card__title body-text">Внедрение ЛИМС</h4>
-    </div>
-</li>
-
-        <li class="service-card" style="background: linear-gradient(225.19deg, #14BCF0 3.5%, #018DD2 95.48%); box-shadow: 0px 10px 30px rgba(19, 176, 225, 0.3);">
-    <span style="background: #0DB1EE;" class="service-card__round service-card__round1"></span>
-    <span style="background: #0DABE6;" class="service-card__round service-card__round2"></span>
-    <span class="service-card__num">03</span>
-    <div class="service-card__content">
-        <i class="service-card__icon">
-            <img src="img/service-icon3.svg" alt="">
-        </i>
-        <h4 class="service-card__title body-text">Валидация информационных систем</h4>
-    </div>
-</li>
-
-        <li class="service-card" style="background: linear-gradient(226.26deg, #37A0FF 4.06%, #007CED 96.08%); box-shadow: 0px 10px 30px rgba(39, 145, 242, 0.3);">
-    <span style="background: #43A5FF;" class="service-card__round service-card__round1"></span>
-    <span style="background: #2496FF;" class="service-card__round service-card__round2"></span>
-    <span class="service-card__num">04</span>
-    <div class="service-card__content">
-        <i class="service-card__icon">
-            <img src="img/service-icon4.svg" alt="">
-        </i>
-        <h4 class="service-card__title body-text">Интеграция ЛИМС-MES</h4>
-    </div>
-</li>
-
-        <li class="service-card" style="background: linear-gradient(250.81deg, #5B43EF 1.63%, #432BD5 99.56%); box-shadow: 0px 10px 30px rgba(99, 78, 228, 0.3);">
-    <span style="background: #6147FB;" class="service-card__round service-card__round1"></span>
-    <span style="background: #5A42F2;" class="service-card__round service-card__round2"></span>
-    <span class="service-card__num">05</span>
-    <div class="service-card__content">
-        <i class="service-card__icon">
-            <img src="img/service-icon5.svg" alt="">
-        </i>
-        <h4 class="service-card__title body-text">Интеграция лабораторного оборудования в ЛИМС</h4>
-    </div>
-</li>
-
-        <li class="service-card" style="background: linear-gradient(222.81deg, #4DCF82 3.06%, #20A254 95.09%); box-shadow: 0px 10px 30px rgba(80, 193, 125, 0.3);">
-    <span style="background: #41CC78;" class="service-card__round service-card__round1"></span>
-    <span style="background: #3CC171;" class="service-card__round service-card__round2"></span>
-    <span class="service-card__num">06</span>
-    <div class="service-card__content">
-        <i class="service-card__icon">
-            <img src="img/service-icon6.svg" alt="">
-        </i>
-        <h4 class="service-card__title body-text">Интеграция ЛИМС-ERP</h4>
-    </div>
-</li>
-
-        <li class="service-card" style="background: linear-gradient(227.3deg, #0CC6A7 4.2%, #009D84 97.64%); box-shadow: 0px 10px 30px rgba(20, 181, 155, 0.3);">
-    <span style="background: #08C0A3;" class="service-card__round service-card__round1"></span>
-    <span style="background: #0ABA9D;" class="service-card__round service-card__round2"></span>
-    <span class="service-card__num">07</span>
-    <div class="service-card__content">
-        <i class="service-card__icon">
-            <img src="img/service-icon7.svg" alt="">
-        </i>
-        <h4 class="service-card__title body-text">Техподдержка ЛИМС</h4>
-    </div>
-</li>
-
-    </div>
-</div>
-
-            </section>
-
-            <section class="products slider-block">
-                <div class="container">
-    <h2 class="products__title display2">Продукты United Lab</h2>
-    <div class="products__slider slider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="product-card swiper-slide">
-    <div class="product-card__icon">
-        <img src="img/product.webp" alt="">
-    </div>
-    <p class="product-card__desc">Поставляемый LabVantage новейший пакет LabVantage 8 предлагает улучшенный, со 100% доступностью функций из WEB-браузера, современный и легкий в применении пользовательский интерфейс, который упрощает работу конечным пользователям. Широкий набор готовых решений для различных отраслей. Ключевыми возможностями, значительно сокращающими затраты времени и усилий для проведения повседневных лабораторных операций, являются новые встроенные функции и обслуживание продукта в течение всего срока эксплуатации.</p>
-    <div class="product-card__items">
-        <div class="product-card__item">
-            <div class="product-card__item-icon">
-                <img src="img/product-icon.svg" alt="">
-            </div>
-            <div class="product-card__item-text">
-                <div class="product-card__item-title">Преимущественно подходит:</div>
-                <div class="product-card__item-desc">для малых и средних предприятий, но при наличии соответствующих ресурсов можно развить систему и для крупных лабораторий</div>
-            </div>
-        </div>
-        <div class="product-card__item">
-            <div class="product-card__item-icon">
-                <img src="img/product-icon2.svg" alt="">
-            </div>
-            <div class="product-card__item-text">
-                <div class="product-card__item-title">Лицензия:</div>
-                <div class="product-card__item-desc">платная</div>
-            </div>
-        </div>
-    </div>
-    <a href="" class="product-card__link mbtn mbtn-black-outline">
-        <span>Подробнее</span>
-        <svg class="sprite">
-            <use xlink:href="img/sprite.svg#chevron-right"></use>
-        </svg>
-    </a>
-</div>
-
-                <div class="product-card swiper-slide">
-    <div class="product-card__icon">
-        <img src="img/product2.webp" alt="">
-    </div>
-    <p class="product-card__desc">Поставляемый LabVantage новейший пакет LabVantage 8 предлагает улучшенный, со 100% доступностью функций из WEB-браузера, современный и легкий в применении пользовательский интерфейс, который упрощает работу конечным пользователям. Широкий набор готовых решений для различных отраслей. Ключевыми возможностями, значительно сокращающими затраты времени и усилий для проведения повседневных лабораторных операций, являются новые встроенные функции и обслуживание продукта в течение всего срока эксплуатации.</p>
-    <div class="product-card__items">
-        <div class="product-card__item">
-            <div class="product-card__item-icon">
-                <img src="img/product-icon.svg" alt="">
-            </div>
-            <div class="product-card__item-text">
-                <div class="product-card__item-title">Преимущественно подходит:</div>
-                <div class="product-card__item-desc">для малых и средних предприятий, но при наличии соответствующих ресурсов можно развить систему и для крупных лабораторий</div>
-            </div>
-        </div>
-        <div class="product-card__item">
-            <div class="product-card__item-icon">
-                <img src="img/product-icon2.svg" alt="">
-            </div>
-            <div class="product-card__item-text">
-                <div class="product-card__item-title">Лицензия:</div>
-                <div class="product-card__item-desc">платная</div>
-            </div>
-        </div>
-    </div>
-    <a href="" class="product-card__link mbtn mbtn-black-outline">
-        <span>Подробнее</span>
-        <svg class="sprite">
-            <use xlink:href="img/sprite.svg#chevron-right"></use>
-        </svg>
-    </a>
-</div>
-
-                <div class="product-card swiper-slide">
-    <div class="product-card__icon">
-        <img src="img/product.webp" alt="">
-    </div>
-    <p class="product-card__desc">Поставляемый LabVantage новейший пакет LabVantage 8 предлагает улучшенный, со 100% доступностью функций из WEB-браузера, современный и легкий в применении пользовательский интерфейс, который упрощает работу конечным пользователям. Широкий набор готовых решений для различных отраслей. Ключевыми возможностями, значительно сокращающими затраты времени и усилий для проведения повседневных лабораторных операций, являются новые встроенные функции и обслуживание продукта в течение всего срока эксплуатации.</p>
-    <div class="product-card__items">
-        <div class="product-card__item">
-            <div class="product-card__item-icon">
-                <img src="img/product-icon.svg" alt="">
-            </div>
-            <div class="product-card__item-text">
-                <div class="product-card__item-title">Преимущественно подходит:</div>
-                <div class="product-card__item-desc">для малых и средних предприятий, но при наличии соответствующих ресурсов можно развить систему и для крупных лабораторий</div>
-            </div>
-        </div>
-        <div class="product-card__item">
-            <div class="product-card__item-icon">
-                <img src="img/product-icon2.svg" alt="">
-            </div>
-            <div class="product-card__item-text">
-                <div class="product-card__item-title">Лицензия:</div>
-                <div class="product-card__item-desc">платная</div>
-            </div>
-        </div>
-    </div>
-    <a href="" class="product-card__link mbtn mbtn-black-outline">
-        <span>Подробнее</span>
-        <svg class="sprite">
-            <use xlink:href="img/sprite.svg#chevron-right"></use>
-        </svg>
-    </a>
-</div>
-
-            </div>
-        </div>
-        <div class="swiper-scrollbar"></div>
-    </div>
-</div>
-
-            </section>
-
-            <section class="team slider-block">
-                <div class="container">
-    <h2 class="team__title display2">Наша команда</h2>
-
-    <div class="team__slider slider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="team-card swiper-slide">
-    <a href="" class="team-card__img">
-        <span class="team-card__img-wrap">
-            <img src="img/team.webp" alt="">
-        </span>
-    </a>
-    <div class="team-card__content">
-        <h3 class="team-card__title">
-            <a href="">Андрей Белицкий</a>
-        </h3>
-        <div class="team-card__badge">продакт менеджер</div>
-        <p class="team-card__desc">Поставляемый LabVantage новейший пакет LabVantage 8 предлагает улучшенный, cо 100% доступностью функций из WEB-браузера, современный и легкий в применении пользовательский интерфейс, который упрощает работу конечным пользователям. Широкий набор готовых решений для различных отраслей.</p>
-    </div>
-</div>
-
-                <div class="team-card swiper-slide">
-    <a href="" class="team-card__img">
-        <span class="team-card__img-wrap">
-            <img src="img/team2.webp" alt="">
-        </span>
-    </a>
-    <div class="team-card__content">
-        <h3 class="team-card__title">
-            <a href="">Алексей Тихонов</a>
-        </h3>
-        <div class="team-card__badge">бизнес-аналитик</div>
-        <p class="team-card__desc">Поставляемый LabVantage новейший пакет LabVantage 8 предлагает улучшенный, cо 100% доступностью функций из WEB-браузера, современный и легкий в применении пользовательский интерфейс, который упрощает работу конечным пользователям. Широкий набор готовых решений для различных отраслей.</p>
-    </div>
-</div>
-
-                <div class="team-card swiper-slide">
-    <a href="" class="team-card__img">
-        <span class="team-card__img-wrap">
-            <img src="img/team3.webp" alt="">
-        </span>
-    </a>
-    <div class="team-card__content">
-        <h3 class="team-card__title">
-            <a href="">Андрей Белицкий</a>
-        </h3>
-        <div class="team-card__badge">продакт менеджер</div>
-        <p class="team-card__desc">Поставляемый LabVantage новейший пакет LabVantage 8 предлагает улучшенный, cо 100% доступностью функций из WEB-браузера, современный и легкий в применении пользовательский интерфейс, который упрощает работу конечным пользователям. Широкий набор готовых решений для различных отраслей.</p>
-    </div>
-</div>
-
-            </div>
-        </div>
-        <div class="swiper-scrollbar"></div>
-    </div>
-</div>
 
             </section>
 
