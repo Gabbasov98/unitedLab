@@ -214,37 +214,43 @@
             name: 'Пермь',
             desc: 'Проект ЛИМС ООО «РН-Смазочные Материалы» на базе ПО LabWare LIMS',
             link: 'some-link',
-            cords: [58.010455, 56.229443]
+            cords: [58.010455, 56.229443],
+            open: true
         },
         {
             name: 'Москва',
             desc: 'Проект ЛИМС ООО «РН-Смазочные Материалы» на базе ПО LabWare LIMS',
             link: 'some-link',
-            cords: [55.755864, 37.617698]
+            cords: [55.755864, 37.617698],
+            open: false
         },
         {
             name: 'Сургут',
             desc: 'Проект ЛИМС ООО «РН-Смазочные Материалы» на базе ПО LabWare LIMS',
             link: 'some-link',
-            cords: [61.241778, 73.393032]
+            cords: [61.241778, 73.393032],
+            open: false
         },
         {
             name: 'Самара',
             desc: 'Проект ЛИМС ООО «РН-Смазочные Материалы» на базе ПО LabWare LIMS',
             link: 'some-link',
-            cords: [53.195878, 50.100202]
+            cords: [53.195878, 50.100202],
+            open: false
         },
         {
             name: 'Омск',
             desc: 'Проект ЛИМС ООО «РН-Смазочные Материалы» на базе ПО LabWare LIMS',
             link: 'some-link',
-            cords: [54.989347, 73.368221]
+            cords: [54.989347, 73.368221],
+            open: false
         },
         {
             name: 'Новосибирск',
             desc: 'Проект ЛИМС ООО «РН-Смазочные Материалы» на базе ПО LabWare LIMS',
             link: 'some-link',
-            cords: [55.030204, 82.920430]
+            cords: [55.030204, 82.920430],
+            open: false
         },
     ]
 
@@ -314,6 +320,9 @@
                 }
             );
             myMap.geoObjects.add(placemark);
+            if(city.open){
+                placemark.balloon.open();
+            }
         })
 
     }
